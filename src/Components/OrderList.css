@@ -1,0 +1,52 @@
+.OrderList {
+    background-color: #EAF0F7;
+  }
+  
+  .line {
+    border-top: 1px solid black;
+    margin: 10px 0;
+  }
+  .container
+  {
+    width: 1320px;
+  }
+  .container-NX
+  {
+    width: 400px;
+  }
+  .box {
+    display: flex; 
+    position: relative;
+    background-color: white;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(-50%, -50%); /* Move the image to the center */
+  }
+  
+  .elements
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .elements-middle
+  {
+    top: 0%;
+    position: relative;
+    left: 50%;
+  }
+
+  .search-input
+  {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 99.3%;
+  }
