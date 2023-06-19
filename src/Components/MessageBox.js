@@ -19,6 +19,7 @@ const MessageBox = ({orderdetails}) => {
         {console.log(orderdetails.messageList[1]['message'])}
         <div className='usermessage'>
             <p>{orderdetails.messageList[1]['message']}</p>
+
         </div>
         <div className='botmessage'>
         <p>{orderdetails.messageList[0]['message']}</p>
