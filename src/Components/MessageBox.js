@@ -13,7 +13,7 @@ const MessageBox = ({orderdetails}) => {
            </div>
         </div>
         <div className='hello'>
-            Send a Message to start chatting
+            Send a Message to start chatting with our customer care
         </div>
         <div>
         {console.log(orderdetails.messageList[1]['message'])}
