@@ -1,17 +1,17 @@
 .MessageBox
 {
     position: absolute;
-    right: 0%;
-    top: 45px;
-    width: 950px;
-    height: 92vh;
+    right: 0;
+    top: 44px;
+    height: 93vh;
     background-color: whitesmoke;
+    left: 380px;
 }
 .heading
 {
     position: absolute;
     top: 0%;
-    width: 940px;
+    width: 980px;
     height: 50px;
     background-color: aliceblue;
 }
@@ -30,5 +30,33 @@
 .inputbox{
     position: absolute;
     bottom: 0%;
-    width: 940px;
+    width: 960px;
 }
+img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+.botmessage{
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+}
+.usermessage {
+    position: absolute;
+    right: 15px;
+    bottom: 80px;
+    display: block;
+    background-color: blue;
+    color: white;
+    width: auto;
+    height: inherit;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  

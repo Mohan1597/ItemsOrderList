@@ -8,26 +8,29 @@
   }
   .container
   {
-    width: 1320px;
+    right: 0;
   }
   .container-NX
   {
     width: 400px;
+    height: 93vh;
+  overflow: auto;
   }
   .box {
     display: flex; 
     position: relative;
     background-color: white;
+    cursor: pointer;
   }
-  img {
+  .elements-left {
     width: 24px;
     height: 24px;
     border-radius: 50%;
     border: 1px solid #000;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     position: absolute;
-    top: 50%;
-    left: 2%;
+    top: 40px;
+    left: 22px;
     transform: translate(-50%, -50%); /* Move the image to the center */
   }
   
@@ -41,12 +44,17 @@
   {
     top: 0%;
     position: relative;
-    left: 50%;
+    left: 60px;
   }
 
-  .search-input
-  {
+  .search-input {
     border: none;
     border-bottom: 1px solid black;
     width: 99.3%;
+    outline: none; 
   }
+  
+  .search-input:focus {
+    border-bottom: 1px solid black;
+  }
+  

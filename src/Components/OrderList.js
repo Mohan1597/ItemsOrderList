@@ -37,8 +37,14 @@ const OrderList = () => {
   }, [SearchValue, OrderDetails]);
 
   const handleClick = order => {
-    setSelectedOrder(order);
+   if (order===selectedOrder)
+   {
     setExpandedState(!isExpanded);
+   }
+   else{
+    setSelectedOrder(order);
+    setExpandedState(true);
+   }
   };
 
   return (
@@ -51,12 +57,12 @@ const OrderList = () => {
           onChange={(e) => setSearchValue(e.target.value)}
         />
       </div>
-      <div className={isExpanded ? "container-NX" : ""}>
+      <div className={isExpanded ? "container-NX" : "container"}>
         {FilteredOrders.map(order => (
           <div className="box" key={order.id} onClick={() => handleClick(order)}>
             <div className="elements">
-              <div className="elements-left">
-                <img src={order.imageURL} alt={order.title} />
+              <div>
+                <img src={order.imageURL} alt={order.title} className="elements-left"/>
               </div>
               <div className="elements-middle">
                 <p>{order.title}</p>
