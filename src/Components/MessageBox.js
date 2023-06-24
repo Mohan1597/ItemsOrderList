@@ -18,7 +18,7 @@ const MessageBox = ({ orderdetails }) => {
       <div className='hello'>
         Send a Message to start chatting with our executive
       </div>
-      <div>
+      {/* <div>
         {orderdetails.messageList && orderdetails.messageList.length > 0 ? (
           <div>
             <div className="usermessage">
@@ -37,8 +37,8 @@ const MessageBox = ({ orderdetails }) => {
             <p>List is empty</p>
           </div>
         )}
-      </div>
-      <input placeholder='Type a Message' className='inputbox' onChange = {(e) => {setCustomermessage(e.target.value)}}/>
+      </div> */}
+      <input placeholder='Type a Message...' className='inputbox' onChange = {(e) => {setCustomermessage(e.target.value)}}/>
       {console.log(customermessage)}
     </div>
   );

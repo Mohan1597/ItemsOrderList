@@ -1,12 +1,17 @@
 .OrderList {
-    background-color: #EAF0F7;
+    background-color: white;
   }
   
   .line {
     border-top: 1px solid black;
     margin: 10px 0;
   }
-  .container
+
+  .title
+  {
+    font-weight: 600;
+  }
+  .container 
   {
     right: 0;
   }
@@ -22,6 +27,7 @@
     background-color: white;
     cursor: pointer;
   }
+
   .elements-left {
     width: 24px;
     height: 24px;
@@ -57,4 +63,5 @@
   .search-input:focus {
     border-bottom: 1px solid black;
   }
+  
   

@@ -2,9 +2,9 @@
 {
     position: absolute;
     right: 0;
-    top: 44px;
-    height: 93vh;
-    background-color: whitesmoke;
+    top: 0px;
+    height: 100vh;
+    background-color: #EAF0F7;
     left: 380px;
 }
 .heading
@@ -13,7 +13,8 @@
     top: 0%;
     width: 980px;
     height: 50px;
-    background-color: aliceblue;
+    background-color: white;
+    left: 2px;
 }
 .hello
 {
@@ -30,7 +31,19 @@
 .inputbox{
     position: absolute;
     bottom: 0%;
-    width: 960px;
+    right: 0vw;
+    left:2px;
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+.inputbox::placeholder
+{
+    position: absolute;
+    top: 40%;
+    left:30px;
+    color: gray;
+    font-size: 15px;
 }
 img{
     width: 24px;
