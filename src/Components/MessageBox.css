@@ -19,7 +19,7 @@
 .hello
 {
     position: absolute;
-    left: 40%;
+    left: 35%;
     top: 50%;
 }
 .matter
@@ -34,24 +34,47 @@
     right: 0vw;
     left:2px;
     height: 40px;
-    border: none;
     background-color: white;
 }
-.inputbox::placeholder
+.chatbox{
+    position: absolute;
+    bottom: 0%;
+    right: 0vw;
+    left:2px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 5px;
+   text-indent: 25px;
+}
+.chatbox::placeholder
 {
     position: absolute;
     top: 40%;
-    left:30px;
+    left:20px;
     color: gray;
     font-size: 15px;
 }
-img{
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 1px solid #000;
+.chatbox:focus
+{
+    border: none;
+}
+.inputbox img{
     position: absolute;
-    top: 13px;
+    top: 10%;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.image img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 11px;
     left: 10px;
 }
 .botmessage{
@@ -59,17 +82,20 @@ img{
     left: 15px;
     bottom: 20px;
 }
-.usermessage {
+.chatmsgs {
     position: absolute;
     right: 15px;
     bottom: 80px;
+    height: 20px;
+    width: auto;
     display: block;
     background-color: blue;
     color: white;
-    width: auto;
-    height: inherit;
     border: 2px solid white;
     border-radius: 10px;
     padding: 10px;
   }
-  
+  .nomsgs
+  {
+    display: none;
+  }

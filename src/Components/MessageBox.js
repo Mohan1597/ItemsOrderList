@@ -3,7 +3,9 @@ import "./MessageBox.css";
 import { useState } from 'react';
 const MessageBox = ({ orderdetails }) => {
 
+
   const [customermessage,setCustomermessage] = useState("");
+  const [displaymessage, setDisplaymessage] = useState(false);
   return (
     <div className="MessageBox">
       <div className='heading'>
@@ -15,9 +17,11 @@ const MessageBox = ({ orderdetails }) => {
           <img src={orderdetails.imageURL} alt="Order" />
         </div>
       </div>
-      <div className='hello'>
-        Send a Message to start chatting with our executive
-      </div>
+      { displaymessage === false && 
+              <div className='hello'>
+              Send a Message to start chatting with our executive
+            </div>
+      }
       {/* <div>
         {orderdetails.messageList && orderdetails.messageList.length > 0 ? (
           <div>
@@ -38,7 +42,20 @@ const MessageBox = ({ orderdetails }) => {
           </div>
         )}
       </div> */}
-      <input placeholder='Type a Message...' className='inputbox' onChange = {(e) => {setCustomermessage(e.target.value)}}/>
+      <div className='inputbox'>
+      <input placeholder='Type a Message...' className='chatbox' onChange = {(e) => {setCustomermessage(e.target.value)}} ></input>
+      <img src="/Icons/messagesend-icon.png" alt="" onClick={() => 
+        {setDisplaymessage(true);
+        } }/>
+      </div>
+      <div>
+        {displaymessage &&
+          (customermessage.length === 0 ? (
+            <div className='nomsgs'></div>
+          ) : (
+            <div className='chatmsgs'>{customermessage}</div>
+          ))}
+      </div>
       {console.log(customermessage)}
     </div>
   );
