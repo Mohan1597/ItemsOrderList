@@ -29,13 +29,12 @@
   }
 
   .elements-left {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    border: 1px solid #000;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+ 
     position: absolute;
-    top: 40px;
+    top: 42px;
     left: 22px;
     transform: translate(-50%, -50%); /* Move the image to the center */
   }
